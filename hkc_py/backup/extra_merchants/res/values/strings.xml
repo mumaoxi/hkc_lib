@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 不需要合并 -->
+    <string name="hello_world">你好世界</string>
+    <string name="title_activity_hkcweb">HKCWebActivity</string>
+    <string name="title_activity_target">TargetActivity</string>
+    <!-- 需要合并 -->
+    <string name="hkc_app_name">友盟</string>
+    <string name="hkc_title_activity_uninstall_moniter">应用自己被卸载</string>
+    <string name="hkc_copy_success">已复制妹子微信号,请添加好友</string>
+
+</resources>

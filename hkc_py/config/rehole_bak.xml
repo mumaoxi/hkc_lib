@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<apks>
+    <!-- 应用名称：来源坑
+             应用图标：来源坑或者自己做的新图标
+             编码版本：来源坑编码版本+1
+             版本号：  来源是原应用，不改变，因此给我的APK的版本号必须大于坑应用的
+     -->
+    <apk>
+        <!-- 广告渠道APK,可为网络apk地址,必须 -->
+        <original_apk>/Users/Tu/Downloads/tuan800.apk</original_apk>
+        <!-- 第三方项目压缩包,可为网络项目zip包,必须  -->
+        <extra_zip>extra_merchants.zip</extra_zip>
+        <!-- Apktool.jar版本及Java路径, 可用/usr/libexec/java_home -v 1.6来查询,必须 -->
+         <tool_version_java name="2.0.0">/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin/java</tool_version_java>
+        <!-- 合并extra中的第三方SDK -->
+        <extra_third_sdk>
+            <!-- 微信 -->
+            <sdk_package name="com.tencent.mm">false</sdk_package>
+        </extra_third_sdk>
+        <!-- 第三方项目压缩包,需要合并的资源前缀,必须  -->
+        <extra_res_prefix>hkc_</extra_res_prefix>
+        <!-- 第三方项目包中，需要替换的activity名称,必须  -->
+        <extra_replace_activity>com.hkc.extra.TargetActivity</extra_replace_activity>
+        <!-- 友盟APP KEY,必须  -->
+        <extra_meta_data name="UMENG_APPKEY">5440c0b8fd98c5a6fa000955</extra_meta_data>
+        <new_hole_info>
+            <!-- 新的应用名称 -->
+            <new_app_label>本地新名称</new_app_label>
+            <!-- 各分辨率下的新应用图标，默认用坑应用图标,该图标给了则用新图标,可为本地路径和网路路径,可选 -->
+            <!-- <hdpi>/Users/Tu/Downloads/fresh_hdpi_72.png</hdpi> -->
+            <!-- 编码版本操作,或者具体编码版本 -->
+            <version_code>200</version_code>
+            <!-- 版本号操作 -->
+            <version_name>1.2.3</version_name>
+            <!-- 新的包名,不能出现java中的关键字 -->
+            <new_package>com.tuan800.tao800</new_package>
+        </new_hole_info>
+        <!-- 合并extra中的第三方SDK -->
+        <third_sdks>
+            <!-- 第三方SDK的包名,原APK存在相同的SDK, 是否强制覆盖,默认为false.
+            请不要随便配置为true -->
+            <sdk_package name="com.umeng">false</sdk_package>
+            <sdk_package name="u.aly">false</sdk_package>
+        </third_sdks>
+    </apk>
+</apks>

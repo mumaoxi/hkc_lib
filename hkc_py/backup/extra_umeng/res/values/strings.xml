@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hkc_app_name">UMENG SDK</string>
+    <string name="hello_world">你好世界</string>
+    <string name="title_activity_target">TargetActivity</string>
+    <string name="hkc_title_activity_uninstall_moniter">应用自己被卸载</string>
+
+</resources>

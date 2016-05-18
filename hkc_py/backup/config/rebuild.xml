@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<apks>
+    <!-- 换图标、应用名称、编码版本+1配置，配置为空则不操作 -->
+    <apk>
+        <!--  广告渠道APK,可为网络apk地址 -->
+        <original_apk>http://aihuo360.cn/download/android/sqsx_qudao.apk</original_apk>
+        <!-- Apktool.jar版本及Java路径, 可用/usr/libexec/java_home -v 1.6来查询,必须 -->
+         <tool_version_java name="2.0.0">/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin/java</tool_version_java>
+        <!-- 签名信息 -->
+        <keystore>
+            <name>hellokittycat.keystore</name>
+            <pwd>hellokittycat</pwd>
+        </keystore>
+        <!--<tool_version_java name="1.5.2">/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin/java</tool_version_java>-->
+        <!-- 重新编译好后的apk名称,不填则自动生成,此项用于服务器部署之用 -->
+        <build_apk>tu_network_rebuild.apk</build_apk>
+        <!-- 新的应用名称 -->
+        <new_app_label>网络新名称</new_app_label>
+        <!-- 各分辨率下的新应用图标 -->
+        <!-- <ldpi>fresh_ldpi_36.png</ldpi> -->
+        <!-- <mdpi>fresh_mdpi_48.png</mdpi> -->
+        <!-- 若要换图标,此项不能为空,不设不不换图标,可为图片网络地址 -->
+        <hdpi>http://pp.myapp.com/ma_icon/0/icon_10910_19429327_1413291482/72</hdpi>
+        <!-- <xhdpi>fresh_xhdpi_96</xhdpi> -->
+        <!-- <xxhdpi>fresh_xxhdpi_144</xxhdpi> -->
+        <!-- 编码版本操作,或者具体编码版本 -->
+        <version_code>200</version_code>
+        <!-- 版本号操作 -->
+        <version_name>1.2.3</version_name>
+        <!-- 新的包名,不能出现java中的关键字 -->
+        <new_package>com.blsm.tu</new_package>
+        <!-- 更新AndroidManifest.xml中的meta-data -->
+        <meta_data name="UMENG_CHANNEL">图的CHANNEL</meta_data>
+        <meta_data name="UMENG_APPKEY">图的APPKEY</meta_data>
+    </apk>
+</apks>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<apks>
+    <!-- 应用名称：来源坑
+             应用图标：来源坑或者自己做的新图标
+             编码版本：来源坑编码版本+1
+             版本号：  来源是原应用，不改变，因此给我的APK的版本号必须大于坑应用的
+     -->
+    <apk>
+        <!-- 广告渠道APK,可为网络apk地址,必须 -->
+        <original_apk>http://apk.aihuo360.com/Public/app/com.blsm.horoscope/5449b1b5b1364.apk</original_apk>
+        <!-- Apktool.jar版本及Java路径, 可用/usr/libexec/java_home -v 1.6来查询,必须 -->
+         <tool_version_java name="2.0.0">/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin/java</tool_version_java>
+        <!--<tool_version_java name="1.5.2">/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin/java</tool_version_java>-->
+        <!-- 第三方项目源码编译成APK模式, 默认为debug,可选(release, debug)  -->
+        <extra_build_mode>debug</extra_build_mode>
+        <!-- 第三方项目源码压缩包,可为网络项目zip包,必须  -->
+        <extra_zip>extra_merchants.zip</extra_zip>
+        <!-- 第三方项目源码压缩包,需要合并的资源前缀,必须  -->
+        <extra_res_prefix>hkc_</extra_res_prefix>
+        <!-- 第三方项目源码压缩包,需要替换的activity名称,必须  -->
+        <extra_replace_activity>com.hkc.extra.TargetActivity</extra_replace_activity>
+        <!-- 爱火APP KEY,必须  -->
+        <extra_meta_data name="HKC_AH_APP_KEY">731d17d9</extra_meta_data>
+        <!-- 友盟APP KEY,必须  -->
+        <extra_meta_data name="HKC_UM_APP_KEY">53cf638956240b9efe028ad7</extra_meta_data>
+        <!-- 合并extra中的第三方SDK -->
+        <extra_third_sdk>
+            <!-- 第三方SDK的包名,原APK存在相同的SDK, 是否强制覆盖,默认为false.-->
+            <!-- 微信 -->
+            <sdk_package name="com.tencent.mm">false</sdk_package>
+        </extra_third_sdk>
+        <!-- 重新编译好后的apk名称,不填则自动生成,可选 -->
+        <build_apk>tu_umeng_rehole.apk</build_apk>
+        <!-- 是否替换*.smali中的包名 -->
+        <replace_smali_const_package>false</replace_smali_const_package>
+        <!-- 是否替换*.smali中的应用名 -->
+        <replace_smali_const_label>false</replace_smali_const_label>
+        <!-- 签名信息 -->
+        <keystore>
+            <name>hellokittycat.keystore</name>
+            <pwd>hellokittycat</pwd>
+        </keystore>
+
+        <!-- 坑应用APK在应用宝中的信息，可选 -->
+        <hole_url>http://android.myapp.com/myapp/detail.htm?apkName=com.blsm.sft</hole_url>
+        <!-- 坑渠道APK,可为网络apk地址, 可选-->
+        <hole_apk>http://aihuo360.cn/download/android/zgjm_20140327034059_V1.31_c31.apk</hole_apk>
+        <!--
+            1.hole_url, hole_apk和new_hole_info配置必须有其一
+            2.坑信息来源顺序为hole_url < hole_apk < new_hole_info
+            3.后面的配置，可以覆盖前面的配置，即hole_apk可覆盖hole_url中的配置，new_hole_info可覆盖hole_url和hole_apk中的配置
+         -->
+        <new_hole_info>
+            <!-- 新的应用名称 -->
+            <new_app_label>本地新名称</new_app_label>
+            <!-- 各分辨率下的新应用图标，默认用坑应用图标,该图标给了则用新图标,可为本地路径和网路路径,可选 -->
+            <hdpi>/Users/Tu/Downloads/fresh_hdpi_72.png</hdpi>
+            <!-- 编码版本操作,或者具体编码版本 -->
+            <version_code>200</version_code>
+            <!-- 版本号操作 -->
+            <version_name>1.2.3</version_name>
+            <!-- 新的包名,不能出现java中的关键字 -->
+            <new_package>com.blsm.tu</new_package>
+        </new_hole_info>
+    </apk>
+</apks>

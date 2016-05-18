@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+	<public type="drawable" name="hkc_draw_splash_bg" id="0x7f020000" />
+	<public type="drawable" name="hkc_ic_launcher" id="0x7f020001" />
+	<public type="drawable" name="hkc_notify_icon" id="0x7f020002" />
+
+	<public type="layout" name="hkc_activity_splash" id="0x7f030001" />
+
+	<public type="string" name="hkc_app_name" id="0x7f040000" />
+	<public type="string" name="hkc_title_activity_uninstall_moniter" id="0x7f040003" />
+
+</resources>
